@@ -1,26 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import { Container, Row } from 'react-bootstrap'
+import CustomText from './components/modules/CustomText/CustomText'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Infonäyttö! :D</h1>
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container fluid className="mt-2">
+        <Row>
+          <CustomText text="Moi" />
+          <CustomText text="Moi 2" />
+          <CustomText text="Esimerkki" />
+        </Row>
+      </Container>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

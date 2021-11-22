@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import { version } from '../package.json'
+import './styles/index.scss'
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
   document.getElementById('root')
-);
+)
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// :D
+console.log(
+  '%c ▜▘   ▗▀▖      ▝▝    ▐  ▐  ▝▝  \n' +
+    ' ▐ ▛▀▖▐  ▞▀▖▛▀▖▝▀▖▌ ▌▜▀ ▜▀ ▞▀▖ \n' +
+    ' ▐ ▌ ▌▜▀ ▌ ▌▌ ▌▞▀▌▚▄▌▐ ▖▐ ▖▌ ▌ \n' +
+    ' ▀▘▘ ▘▐  ▝▀ ▘ ▘▝▀▘▗▄▘ ▀  ▀ ▝▀  \n' +
+    '%c ═════════════════════════════ \n' +
+    '%c           v. ' +
+    version +
+    '                  ',
+  'background: #000b1e; color: #d300c4; font-size: 20px; text-shadow: 3px 3px 10px #711c91;',
+  'background: #000b1e; color: #1afe49; font-size: 20px; text-shadow: 1px 1px 3px #00ff9f;',
+  'background: #000b1e; color: #d300c4; font-size: 17px; text-shadow: 1px 1px 3px #711c91;'
+)
